@@ -1,0 +1,64 @@
+<!--
+MIT License
+
+Copyright (c) 2016 Andy Kreling
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" type = "text/css" href="bt_rolls.css">
+        <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+        <script src="bt_rolls.js"></script>
+    </head>
+    <body>
+        <div class="dieArea">
+            <span id="die1" class="usedOneDie"></span>
+            +
+            <span id="die2"></span>
+            =
+            <span id="total" class="usedTwoDice"></span>
+        </div>
+        <hr />
+        <div class="resultTable usedTwoDice fourColumns">
+            <div class="name">'Mech Hit Location Table</div>
+            <table id="mechHitLocationTable"></table>
+        </div>
+        <div class="resultTable usedTwoDice">
+            <div class="name">Determining Critical Hits Table</div>
+            <div id="determiningCriticalHitsTable"></div>
+        </div>
+        <div class="resultTable usedOneDie fourColumns">
+            <div class="name">'Mech Punch Location Table</div>
+            <table id="mechPunchLocationTable"></table>
+        </div>
+        <div class="resultTable usedOneDie fourColumns">
+            <div class="name">'Mech Kick Location Table</div>
+            <table id="mechKickLocationTable"></table>
+        </div>
+        <div class="resultTable usedTwoDice">
+            <div class="name">Cluster Hits Table</div>
+            <table id="clusterHitsTable"></table>
+        </div>
+        <div class="resultTable usedOneDie twoColumns">
+            <div class="name">Facing After Fall Table</div>
+            <table id="facingAfterFallTable"></table>
+        </div>
+    </body>
+</html>
